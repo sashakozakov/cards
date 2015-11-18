@@ -1,57 +1,255 @@
-body{
-
-}
-
-/* Typography */
-a,
-input[type="submit"],
-input[type="button"],
-button{
-	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-}
-input[type="submit"],
-input[type="button"],
-button,
-.ba-button{
-	display: inline-block;
-}
-input[type="submit"]:hover,
-input[type="button"]:hover,
-button:hover,
-.ba-button:hover{
-
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-textarea,
-select {
-
-	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-textarea:focus,
-select:focus {
-
-}
-textarea {
-
+body {
+  background: lightblue;
 }
 
 /* Layout */
-.ba-container{
-	padding-left: 20px;
-	padding-right: 20px;
+.ba-container {
+  padding: 20px;
+  text-align: center;
 }
+
+.ba-container .card-container {
+  cursor: pointer;
+  height: 340px;
+  -webkit-perspective: 600;
+          perspective: 600;
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  margin: 15px;
+}
+
+.ba-container .card {
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.ba-container .card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.ba-container .card .side {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+}
+
+.ba-container .card .ba-front .red {
+  color: red;
+}
+
+.ba-container .card .ba-front .ba-title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+}
+
+.ba-container .card .ba-front .ba-title p {
+  margin: 0;
+}
+
+.ba-container .card .ba-front .ba-title__top {
+  left: 10px;
+  top: 20px;
+}
+
+.ba-container .card .ba-front .ba-title__bottom {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  bottom: 20px;
+  right: 10px;
+}
+
+.ba-container .card .ba-front .ba-title__center {
+  text-align: center;
+  top: 45%;
+  left: 100px;
+}
+
+.ba-container .card .ba-front .ba-title .ba-icon__big {
+  font-size: 90px;
+}
+
+.ba-container .card .ba-front .ba-card {
+  font-size: 60px;
+  position: absolute;
+}
+
+.ba-container .card .ba-front .ba-card__10__icon3 {
+  top: 65px;
+  left: 0;
+  right: 0;
+}
+
+.ba-container .card .ba-front .ba-card__10__icon4 {
+  top: 100px;
+  left: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__10__icon5 {
+  top: 100px;
+  right: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__10__icon6 {
+  top: 145px;
+  right: 0;
+  left: 0;
+}
+
+.ba-container .card .ba-front .ba-card__10__icon7 {
+  top: 180px;
+  left: 50px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ba-container .card .ba-front .ba-card__10__icon8 {
+  top: 180px;
+  right: 50px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ba-container .card .ba-front .ba-card__9__icon3 {
+  top: 65px;
+  left: 0;
+  right: 0;
+}
+
+.ba-container .card .ba-front .ba-card__9__icon4 {
+  top: 100px;
+  left: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__9__icon5 {
+  top: 100px;
+  right: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__9__icon6 {
+  top: 145px;
+  right: 0;
+  left: 0;
+}
+
+.ba-container .card .ba-front .ba-card__9__icon7 {
+  top: 180px;
+  left: 50px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ba-container .card .ba-front .ba-card__9__icon8 {
+  top: 180px;
+  right: 50px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ba-container .card .ba-front .ba-card__8__icon3 {
+  top: 82px;
+  left: 0;
+  right: 0;
+}
+
+.ba-container .card .ba-front .ba-card__8__icon4 {
+  top: 135px;
+  left: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__8__icon5 {
+  top: 135px;
+  right: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__8__icon6 {
+  top: 190px;
+  right: 0;
+  left: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ba-container .card .ba-front .ba-card__7__icon3 {
+  top: 82px;
+  left: 0;
+  right: 0;
+}
+
+.ba-container .card .ba-front .ba-card__7__icon4 {
+  top: 135px;
+  left: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__7__icon5 {
+  top: 135px;
+  right: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__6__icon4 {
+  top: 135px;
+  left: 50px;
+}
+
+.ba-container .card .ba-front .ba-card__6__icon5 {
+  top: 135px;
+  right: 50px;
+}
+
+.ba-container .card .ba-back {
+  background: #4389FD;
+  background: -webkit-linear-gradient(315deg, #cedbe9 0%, #26558b 11%, #419ad6 19%, #419ad6 25%, #26558b 32%, #aac5de 38%, #419ad6 44%, #6199c7 50%, #3a84c3 52%, #419ad6 57%, #4bb8f0 61%, #3a8bc2 66%, #26558b 72%, #419ad6 80%, #aac5de 86%, #26558b 95%);
+  background: linear-gradient(135deg, #cedbe9 0%, #26558b 11%, #419ad6 19%, #419ad6 25%, #26558b 32%, #aac5de 38%, #419ad6 44%, #6199c7 50%, #3a84c3 52%, #419ad6 57%, #4bb8f0 61%, #3a8bc2 66%, #26558b 72%, #419ad6 80%, #aac5de 86%, #26558b 95%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 );
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.ba-card-icon1 {
+  top: 30px;
+  left: 50px;
+}
+
+.ba-card-icon2 {
+  top: 30px;
+  right: 50px;
+}
+
+.ba-card-icon9 {
+  top: 240px;
+  left: 50px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ba-card-icon10 {
+  top: 240px;
+  right: 50px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */

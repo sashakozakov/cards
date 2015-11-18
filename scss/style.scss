@@ -1,0 +1,131 @@
+body{
+	background: lightblue;
+}
+
+/* Layout */
+.ba-container{
+	padding: 20px;
+	text-align: center;
+.card-container {
+	cursor: pointer;
+	height: 340px;
+	perspective: 600;
+	position: relative;
+	width: 250px;
+	display: inline-block;
+	margin: 15px;
+}
+.card {
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: all 1s ease-in-out;
+	width: 100%;
+
+	&:hover {
+		transform: rotateY(180deg);
+	}
+	.side {
+		backface-visibility: hidden;
+		border-radius: 6px;
+		height: 100%;
+		position: absolute;
+		overflow: hidden;
+		width: 100%;
+		background: #fff;
+	}
+	.ba-front {
+		.red {
+				color: red;
+			}
+		.ba-title {
+			font-size: 36px;
+			line-height: 40px;
+			font-weight: 400;
+			text-align: center;
+			position: absolute;
+			p {
+				margin: 0;
+			}
+			&__top {
+				left: 10px;
+				top: 20px;
+			}
+			&__bottom {
+				transform: rotate(180deg);
+				bottom: 20px;
+				right: 10px;
+			}
+			&__center {
+				text-align: center;
+				top: 45%;
+				left: 100px;
+
+			}
+
+			.ba-icon {
+				&__big {
+					font-size: 90px;
+				}
+			}
+
+		}
+		.ba-card {
+			    font-size: 60px;
+				position: absolute;
+			&__10 {
+				&__icon3 {top: 65px;left: 0;right: 0;}
+				&__icon4 {top: 100px;left: 50px;}
+				&__icon5 {top: 100px;right: 50px;}
+				&__icon6 {top: 145px;right: 0;left: 0;}
+				&__icon7 {top: 180px;left: 50px;transform: rotate(180deg);}
+				&__icon8 {top: 180px;right: 50px;transform: rotate(180deg);}
+			}
+			&__9 {
+				&__icon3 {top: 65px;left: 0;right: 0;}
+				&__icon4 {top: 100px;left: 50px;}
+				&__icon5 {top: 100px;right: 50px;}
+				&__icon6 {top: 145px;right: 0;left: 0;}
+				&__icon7 {top: 180px;left: 50px;transform: rotate(180deg);}
+				&__icon8 {top: 180px;right: 50px;transform: rotate(180deg);}
+			}
+
+			&__8 {
+				&__icon3 {top: 82px;left: 0;right: 0;}
+				&__icon4 {top: 135px;left: 50px;}
+				&__icon5 {top: 135px;right: 50px;}
+				&__icon6 {top: 190px;right: 0;left: 0;transform: rotate(180deg);}
+			}
+			&__7 {
+				&__icon3 {top: 82px;left: 0;right: 0;}
+				&__icon4 {top: 135px;left: 50px;}
+				&__icon5 {top: 135px;right: 50px;}
+			}
+			&__6 {
+				&__icon4 {top: 135px;left: 50px;}
+				&__icon5 {top: 135px;right: 50px;}
+			}
+		}
+
+	}
+	.ba-back {
+		background: #4389FD;
+		background: linear-gradient(135deg, rgba(206,219,233,1) 0%,
+			rgba(38,85,139,1) 11%, rgba(65,154,214,1) 19%,
+			rgba(65,154,214,1) 25%, rgba(38,85,139,1) 32%,
+			rgba(170,197,222,1) 38%, rgba(65,154,214,1) 44%,
+			rgba(97,153,199,1) 50%, rgba(58,132,195,1) 52%,
+			rgba(65,154,214,1) 57%,rgba(75,184,240,1) 61%,
+			rgba(58,139,194,1) 66%,rgba(38,85,139,1) 72%,
+			rgba(65,154,214,1) 80%,	rgba(170,197,222,1) 86%,
+				rgba(38,85,139,1) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 );
+		transform: rotateY(180deg);
+	}
+}
+
+}
+.ba-card-icon1 {top: 30px;left: 50px;}
+.ba-card-icon2 {top: 30px;right: 50px;}
+.ba-card-icon9 {top: 240px;left: 50px;transform: rotate(180deg);}
+.ba-card-icon10 {top: 240px;right: 50px;transform: rotate(180deg);}
